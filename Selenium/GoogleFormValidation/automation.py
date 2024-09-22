@@ -50,7 +50,7 @@ actual_text = driver.find_element(By.XPATH, my_selectors.ACTUAL_TEXT_XPATH).text
 
 try:
     assert expected_text in actual_text, f"Expected text '{expected_text}' not found in '{actual_text}'!"
-    print("Test passed: The expected text was found.")
+    print("Test passed: The form was sent.")
 except AssertionError as e:
     print(f"Test failed: {e}")
 
